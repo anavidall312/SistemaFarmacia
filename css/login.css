@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+width: 100vw;
+height: 100vh;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+@media (max-width: 999px){
+
+    .alinhamento{
+        position: relative;
+    }
+    form{
+        top: 25%;
+            position: absolute;
+            display: block;
+            background-color: yellow;
+            position: relative;
+            width: 100vw;
+            height: 80vh;
+            text-align: center;
+    }
+    .olho {
+        cursor: pointer;
+        position: absolute;
+        width: 27px;
+        left: 80%;
+      
+    }
+}
+
+
+h1{
+    margin-bottom: 50px;
+    padding-top: 15px;
+}
+
+form{
+    border: 1px solid gray;
+    position: absolute;
+    display: block;
+    background-color: yellow;
+    transform: translate(-50%, -50%);
+    position: relative;
+    min-width: 30vw;
+    min-height: 60vh;
+    text-align: center;
+}
+
+.alinhamento{
+    left: 50%;
+    top: 50%;
+    position: relative;
+}
+
+.input{
+    margin-bottom: 20px;
+    padding-left: 8px;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 0;
+    border: 1px solid gray;
+    width: 250px;
+    height: 30px;
+}
+
+input[type="submit"]{
+    text-align: center;
+    outline: none;
+    margin-left: 40px;
+    padding-right: 5px;
+    background-color: transparent;
+    border: 1px solid gray;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    outline: none;
+}
+
+.cadastro{
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid gray;
+    padding: 6px;
+    color: black;
+}
+
+
+  
+.olho {
+    cursor: pointer;
+    position: absolute;
+    width: 27px;
+    left: 56%;
+}
