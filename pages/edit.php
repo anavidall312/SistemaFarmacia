@@ -2,7 +2,7 @@
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-require('conexão.php');
+    require('conexão.php');
 
     $nome = $_POST["nome"];
     $email = $_POST["email"];
@@ -39,10 +39,14 @@ require('conexão.php');
 
     $stmt->close();
     $conn->close();
+
 }
 
 
 ?>
+
+
+
 
 
 <!DOCTYPE html>
@@ -54,26 +58,25 @@ require('conexão.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/iconfont.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <title>Cadastro</title>
 </head>
 <body>
 
-<header class="header">
+    <header class="header">
         <div class="container">
             <nav class="nav">
                 <a href="#" class="logo">
                     <img src="../img/logo sem fundo.png" alt="logo">
                 </a>
-                <h2>Login</h2>
+                <h2>Cadastro</h2>
                 <div class="mobile-menu">
                     <div class="linha1"></div>
                     <div class="linha2"></div>
                     <div class="linha3"></div>
                 </div>
                 <ul class="nav-list">
-                    <li><a class="a-menu-inicial" href="../index.php">Início</a></li>
-                    <li><a class="a-menu" href="cadastro.php">Login</a></li>
+                    <li><a class="a-menu" href="sistema.php">Voltar</a></li>
                 </ul>
             </nav>
         </div>
@@ -82,38 +85,40 @@ require('conexão.php');
 
 
 
-     <div class="alinhamento">
-    <form method="POST" action="controle.php">
-        
-<h1>Insira seus dados</h1>
-<div class="eye">
-<input class="input" type="text" name="email" placeholder="Email" required></div><br>
-<div class="eye">
-<input class="input" type="password" name="senha" placeholder="Senha" id="pass" required>
-<i><img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho"></i></div><br> 
-<input nome="robo" type="checkbox"> 
-<label for="robo" style="color:white">Não sou um robô</label><br><br>
-<a href="cadastro.php" class="cadastro">Cadastre-se</a>
-<input type="submit" value="Enviar">
+    <div class="alinhamento">
+        <form method="POST" action="login.php">
+            
+            <h1>Insira seus dados</h1>
+            <div class="eye">
+                <input class="input" type="text" name="nome" id="nome" placeholder="Nome completo">
+            </div>
+            <div class="eye">
+                <input class="input" id="email" name="email" type="email" placeholder="Email" required>
+            </div>
+            <div class="eye">
+                <input class="input" id="senha" name="senha" type="password" placeholder="Senha" id="pass" required>
+                    <i>
+                        <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho">
+                    </i>
+            </div>
 
-</form>
+
+
+            <div class="eye">
+                <input class="input" type="text" name="contato" id="contato" placeholder="Contato">
+            </div>
+            <div class="eye">
+                <input class="input" type="text" name="telefone" id="telefone" placeholder="Tel. (88) 99999-9999" maxlength="15">
+            </div>
+            <input name="robo" type="checkbox"> 
+            <label for="robo" style="color:white;">Não sou um robô</label><br><br>
+            <input type="submit" value="Enviar">
+
+    </form>
 </div> 
 
-<!--
-<form action="">
-    <div class="eye">
-        <input type="email" name="" id="">
-    </div>
-    <div class="eye">
-        <input type="password" name="" id="">
-        <span class="lnr lnr-eye"></span>
-    </div>
-    <div class="eye">
-    <input type="submit" value="Enviar">
-    </div>
-</form>
--->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script src="../scripts/olho.js"></script>
+<script src="../scripts/telefone.js"></script>
 </body>
 </html>

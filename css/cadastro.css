@@ -119,7 +119,6 @@ display: flex;
         width: 200px;
     }
     .input{
-        zoom: 0;
         margin-bottom: 20px;
         padding: 8px;
         outline: none;
@@ -142,7 +141,7 @@ form{
     background-color: #FF6B00;
     transform: translate(-50%, -50%);
     position: relative;
-    width: 35vw;
+    width: 60vw;
     height: 60vh;
     text-align: center;
 }
@@ -154,7 +153,8 @@ form{
 }
 
 .eye{
-    margin: auto;
+    display: flex;
+    justify-content: space-around;
     position:relative;
     width: 270px;
 }
@@ -164,7 +164,6 @@ form{
 }
 
 .input{
-    zoom: 0;
     margin-bottom: 20px;
     padding: 8px;
     outline: none;
@@ -176,7 +175,6 @@ form{
 }
 
 input[type="submit"]{
-    
     text-align: center;
     outline: none;
     margin-left: 31px;
