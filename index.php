@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="img/Logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/lua-fundo-removido.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -25,8 +25,8 @@
                 </div>
                 <ul class="nav-list">
                     <li><a class="a-menu-inicial" href="#">Início</a></li>
-                    <li><a class="a-menu" href="pages/pets.php">Nossos Produtos</a></li>
-                    <li><a class="a-menu" href="index.php">Contato</a></li>
+                    <li><a class="a-menu" href="pages/cadastro.php">Cadastro</a></li>
+                    <li><a class="a-menu" href="#contato">Contato</a></li>
                     <li><a class="a-menu" href="pages/login.php">Login</a></li>
                 </ul>
             </nav>
@@ -38,11 +38,11 @@
             <div class="hero">
                 <div class="container">
                     <div class="main-heading">
-                        <h1 class="title">Farmácia Batista</h1>
-                        <h2 class="subtitle">Venha visitar-nos</h2>
+                        <h1 class="title">Farmácia Madre Paulina</h1>
+                        <h2 class="subtitle">Quem sai ganhando é você</h2>
                     </div>
                     <!-- <div class="button home_slider_button"><div class="button_bcg"></div><a href="ofertas.php">confira agora<span></span><span></span><span></span></a></div> -->
-                    <a href="#" class="btn btn-gradient">Nossos Produtos</a>
+                    <a href="pages/produtos.php" class="btn btn-gradient">Nossos Produtos</a>
                 </div>
             </div>
 
@@ -54,19 +54,19 @@
                 <input type="radio" name="radio-btn" id="radio5">     
 
                 <div class="slide first">
-                    <img src="https://cdn.psychologytoday.com/sites/default/files/styles/og_image/public/field_blog_entry_teaser_image/2018-12/50550709_m.jpg?itok=X_0Mv_Cd" alt="">
+                    <img src="https://guiadafarmacia.com.br/wp-content/uploads/2021/10/Farmacias-ponto-estrategico.jpg" alt="">
                 </div>
                 <div class="slide">
-                    <img src="https://www.market.at/wp-content/uploads/Depositphotos_112496136_xl-2015-scaled.jpg" alt="">
+                    <img src="https://matriculas.estacio.br/blog/wp-content/uploads/2019/04/faculdade-de-farmacia-onde-trabalhar-depois-formado-estacio.jpg" alt="">
                 </div>    
                 <div class="slide">
-                    <img src="https://justifiedgrid.com/wp-content/gallery/life/animals/154696313.jpg" alt="">
+                    <img src="https://img.freepik.com/fotos-gratis/homem-e-mulher-escolhendo-medicamentos-nas-farmacias_85574-3135.jpg?w=2000" alt="">
                 </div> 
                 <div class="slide">
-                    <img src="https://i.imgflip.com/31ujtm.jpg" alt="">
+                    <img src="https://hilab.com.br/wp-content/uploads/2018/10/Atrair-clientes-farmacia-Hilab-1149x768.jpg" alt="">
                 </div>      
                 <div class="slide">
-                    <img src="https://momblogsociety.com/wp-content/uploads/2019/09/2-5.jpg" alt="">
+                    <img src="https://caetite.ba.gov.br/site/wp-content/uploads/2021/12/farmacia.jpg" alt="">
                 </div>
 
                 <div class="navigation-auto">
@@ -98,4 +98,5 @@
     </div>
     </footer>
 </body>
+<script src="scripts/mobile-navbar.js"></script>
 </html>

@@ -8,11 +8,12 @@
 }
 
 body{
+    overflow-x: hidden;
 width: 100vw;
 height: 100vh;
 overflow-x: hidden;
 overflow-y: hidden;
-background-color: #07058D;
+background-color: #00008B;
 }
 
 /* Tela Inicial */
@@ -31,13 +32,13 @@ background-color: #07058D;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #FF6B00;
+    background-color:#d60808;
     z-index: 999;
     text-align: center;
 }
 
 .header.active{
-    background-color: #FF6B00;
+    background-color:  #d60808;
 }
 
 a{
@@ -52,14 +53,14 @@ a{
     text-decoration: none;
     font-family: 'Fjalla One', sans-serif;
     letter-spacing: 1px;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease; 
     font-size: 26px;
     border: 2px solid black;
 }
 
 .a-menu:hover{
-    color: #FF6B00;
-    background-color: black;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
 }
 
 .a-menu-inicial{
@@ -73,7 +74,7 @@ a{
 }
 
 .a-menu-inicial:hover{
-color: #FF6B00;
+color: #f3f3f3;
 background-color: black;
 }
 
@@ -139,9 +140,9 @@ h1{
 }
 
 form{
-    background-color: #FF6B00;
+    background-color:  gray;
     transform: translate(-50%, -50%);
-    position: relative;
+    position: relative;     
     width: 35vw;
     height: 60vh;
     text-align: center;
@@ -176,7 +177,6 @@ form{
 }
 
 input[type="submit"]{
-    
     text-align: center;
     outline: none;
     margin-left: 31px;
@@ -192,22 +192,7 @@ input[type="checkbox"]{
     outline: none;
     border: 0;
 }
-/*
-.cadastro::after{
-    content: "";
-    width: 100%;
-    z-index: 2;
-    position: absolute;
-    background-color: #FF6B00;
-    transform: scaleX(0);
-    transition: 250ms ease-in;
-    transform-origin: left;
-}
 
-.cadastro:hover .cadastro::after{
-    transform: scaleX(1);
-}
-*/
 .cadastro{
     position: relative;
     z-index: 1;
@@ -233,6 +218,9 @@ input[type="checkbox"]{
 
 h2{
     position: absolute;
-    right: 47%;
+    right: 49%;
     font-family:'Fjalla One', sans-serif;
+}
+h1{
+    font-family: serif;
 }

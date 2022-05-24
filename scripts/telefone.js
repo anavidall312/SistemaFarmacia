@@ -20,3 +20,44 @@ window.onload = function(){
 		mascara( this, mtel );
 	}
 }
+
+
+
+/*
+ var cpf = document.querySelector("#cpf");
+
+ cpf.addEventListener("blur", function(){
+    cpf.value = cpf.value.match(/.{1,3}/g).join(".").replace(/\.(?=[^.]*$)/,"-");
+ });
+ */
+
+
+/*
+ var rg = document.querySelector("#rg");
+
+ rg.addEventListener.off("blur", function(){
+     rg.value = rg.value.match(/.{1,3}/g).join(".").replace(/\.(?=[^.]*$)/,"-");
+ });
+*/
+
+
+function formatarCampo(campoTexto) {
+    if (campoTexto.value.length <= 11) {
+        campoTexto.value = mascaraCpf(campoTexto.value);
+    } else {
+        campoTexto.value = mascaraCnpj(campoTexto.value);
+    }
+}
+function retirarFormatacao(campoTexto) {
+    campoTexto.value = campoTexto.value.replace(/(\.|\/|\-)/g,"");
+}
+function mascaraCpf(valor) {
+    return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g,"\$1.\$2.\$3\-\$4");
+}
+function mascaraCnpj(valor) {
+    return valor.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/g,"\$1.\$2.\$3\/\$4\-\$5");
+}
+
+
+    // ------------------------------------------------------------------------------------------------------------------------------
+
