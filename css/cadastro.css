@@ -231,3 +231,12 @@ h2{
     right: 47%;
     font-family:'Fjalla One', sans-serif;
 }
+
+#input > * {
+    height: 1.3em;
+    float: left;
+  }
+  
+  #input img {
+    cursor: pointer;
+  }

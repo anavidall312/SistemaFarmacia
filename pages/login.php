@@ -72,9 +72,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             <br>
             <div class="eye">
                 <input class="input" type="password" name="senha" placeholder="Senha" id="pass" required/>
-                <i>
-                    <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho">
-                </i>
             </div>
             <br><br><br>
             <a href="cadastro.php" class="cadastro">Cadastre-se</a>

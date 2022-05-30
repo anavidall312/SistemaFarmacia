@@ -165,6 +165,10 @@ while($user_data = mysqli_fetch_assoc($result)){
             </tbody>
         </table>
     </div>
+
+
+
+    
 </body>
 <script>
     var search = document.getElementById('pesquisar');

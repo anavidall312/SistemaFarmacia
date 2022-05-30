@@ -35,10 +35,7 @@ init() {
 
 }
 
-window.onload = () => {
+const mobileNavbar = new MobileNavbar(
+    ".mobile-menu", ".nav-list", ".nav-list li", ".box-search");
 
-    const mobileNavbar = new MobileNavbar(
-        ".mobile-menu", ".nav-list", ".nav-list li");
-    
-        mobileNavbar.init();
-}
+    mobileNavbar.init();
