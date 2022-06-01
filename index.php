@@ -124,8 +124,8 @@
         
         <div class="col">
             <div class="inputBox">
-                <input type="text" name="" required="required">
-                <span class="text">Mobile</span>
+                <input type="text" name="telefone" id="telefone" maxlength="15" autocomplete="off" required="required">
+                <span class="text">Telefone</span>
                 <span class="line"></span>
             </div>
         </div>
@@ -160,4 +160,5 @@
     </footer>
 </body>
 <script src="scripts/mobile-navbar.js"></script>
+<script src="scripts/telefone.js"></script>
 </html>

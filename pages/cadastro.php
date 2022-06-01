@@ -39,7 +39,7 @@ header('Location: login.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/iconfont.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/iconfont.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/cadastro.css">
     <title>Cadastro</title>
@@ -89,15 +89,20 @@ header('Location: login.php');
                <label for="nome">Nome</label>
             </div>
             <div class="eye">
-                <input class="input" id="email" name="email" type="email"  required/>
+                <input class="input" id="email" name="email" type="email" autocomplete="off" required/>
                 <label for="email">Email</label>
             </div>
             <div class="eye">
-                <input class="input" name="senha" type="password" id="passe" required/>
+                <!-- <div class="inpute">
+                    <input class="input" name="senha" type="password" id="input" required/>
+                    <label for="senha">Senha</label>
+                    <img src="http://i.stack.imgur.com/H9Sb2.png" alt="">
+                </div> -->
+
+            <div id="div-input">
+                <input type="password" class="input" name="senha" required/>
                 <label for="senha">Senha</label>
-                <i>
-                       
-                </i>
+                </div>
             </div>
 
             <div class="eye">
@@ -110,7 +115,7 @@ header('Location: login.php');
                 <label for="rg">Rg</label>
             </div>
             <div class="eye">
-                <input class="input" type="text" name="telefone" id="telefone" maxlength="16" autocomplete="off" required/>
+                <input class="input" type="text" name="telefone" id="telefone" maxlength="15" autocomplete="off" required/>
                 <label for="telefone">Telefone</label>
             </div>
             <input type="submit" value="Enviar">
