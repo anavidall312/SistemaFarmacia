@@ -140,7 +140,7 @@ h1{
 }
 
 form{
-    background-color:  gray;
+    background-color:  rgb(206, 203, 203);
     transform: translate(-50%, -50%);
     position: relative;     
     width: 35vw;

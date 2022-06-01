@@ -141,7 +141,7 @@ h1{
 form{
     width: 100%;
     max-width: 800px;
-    background-color: gray;
+    background-color: rgb(206, 203, 203);
     padding: 50px;
     margin-top: 70px;
 }

@@ -7,11 +7,11 @@
 :root {
     --dark-color: #2d2c2c;
     --purple-solid: #350a4f;
-    --orange-transparent: rgba(255, 87, 41, 0.7);
+    --orange-transparent: #d60808;
     --yellow-transparent-alt: rgba(246, 212, 101, 0.2);
     --pink-transparent-alt: rgba(158, 149, 255, 0.568);
-    --pink-alt: rgba(158, 149, 255);
-    --orange-light: #ff653a;
+    --pink-alt: #d60808;
+    --orange-light: #d60808;
     --yellow-solid: #55aad1;
     --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--pink-transparent-alt));
     --gradient-color-alt: linear-gradient(to right, var(--pink-transparent-alt), var(--yellow-solid));
