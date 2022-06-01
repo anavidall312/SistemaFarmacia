@@ -28,11 +28,11 @@ $result = $conn->query($sql);
     <link rel="shortcut icon" href="../img/lua-fundo-removido.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Sistema de Usuários</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
         *{
         margin: 0;
         padding: 0;
@@ -95,6 +95,35 @@ $result = $conn->query($sql);
             justify-content: center;
             gap: .1%;
         }
+        .cadAdmin{
+            margin-right: 55px;
+            text-decoration: none;
+            background-color: white;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            padding: 20px;
+        }
+        .cadAdmin:hover{
+            text-decoration: underline;
+            color: black;
+            
+        }
+        .cadProduto{
+            margin-left: 55px;
+            text-decoration: none;
+            background-color: white;
+            color: black;
+            font-family: 'Poppins', sans-serif;
+            padding: 20px;
+        }
+        .cadProduto:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        .alinhar{
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 <body>
@@ -119,6 +148,14 @@ echo "<h1>Bem vindo $logado</h1>";
             </svg>
         </button>
     </div>
+    <br>
+    <div class="alinhar">
+    <a href="../admin-page/cadastrar-produto.php" class="cadProduto">Novo Produto</a>
+    <a href="../admin-page/cadastrar-admin.php" class="cadAdmin">Novo Administrador</a>
+    </div>
+
+
+
     <div class="m-5">
         <table class="table text-white">
             <thead>
