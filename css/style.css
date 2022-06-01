@@ -582,8 +582,33 @@ border-radius: 2px;
 
 /* Fim do Formulário */
 
+.footer-header{
+    background-color: gray;
+    width: 100vw;
+    overflow-x: hidden;
+}
 
-footer{
+.footer-header img{
+    width: 200px;
+    padding-left: 30px;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social li{
+    display: flex;
+    justify-content: space-around;
+}
+
+.medias{
+    cursor: pointer;
+
+}
+
+.footer{
     padding: 20px;
     width: 100vw;
     height: 7vh;
