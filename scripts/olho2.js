@@ -28,9 +28,9 @@ var img = document.querySelector('#div-input i');
 var i = document.querySelector('#div-input #olho-fechado');
 img.addEventListener('click', function () {
   input.type = input.type == 'text' ? 'password' : 'text';
-});
-
-while(input.type == 'text'){
+  while(input.type == 'text'){
     img.style.display='none';
     i.style.display='block';
 }
+});
+

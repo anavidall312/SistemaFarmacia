@@ -98,7 +98,6 @@ header('Location: login.php');
                     <label for="senha">Senha</label>
                     <img src="http://i.stack.imgur.com/H9Sb2.png" alt="">
                 </div> -->
-
             <div id="div-input">
                 <input type="password" class="input" name="senha" required/>
                 <label for="senha">Senha</label>

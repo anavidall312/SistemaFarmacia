@@ -14,7 +14,7 @@ width: 100vw;
 height: 100vh;
 overflow-x: hidden;
 overflow-y: hidden;
-background-color: #00008B;
+background-color:  #0b095e;
 font-family: 'Poppins', sans-serif;
 }
 
@@ -34,13 +34,13 @@ font-family: 'Poppins', sans-serif;
     position: fixed;
     top: 0;
     left: 0;
-    background-color:#d60808;
+    background-color:#c20303;
     z-index: 999;
     text-align: center;
 }
 
 .header.active{
-    background-color:  #d60808;
+    background-color:  #c20303;
 }
 
 a{
@@ -147,8 +147,8 @@ h1{
 
 form{
     font-family: 'Poppins', sans-serif;
-    background-color:  gray;
-    transform: translate(-50%, -50%);
+    background-color:  rgb(182, 179, 179);
+    transform: translate(-50%, -40%);
     position: relative;     
     width: 35vw;
     height: 60vh;

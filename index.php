@@ -9,6 +9,7 @@
     <title>IDCA Tecnologia</title>
 </head>
 <body>
+    
     <!-- <img src="img/2.png" alt="logo" width="700px">
     <img src="img/1.png" alt="..." width="700px"> -->
 
@@ -93,59 +94,59 @@
 
 <section>
     <div class="conteudo">
-<h2>Mande-nos uma mensagem!</h2>
-    <div class="row100">
-        <div class="col">
-            <div class="inputBox">
-                <input type="text" name="" required="required">
-                <span class="text">Primeiro Nome</span>
-                <span class="line"></span>
+        <h2>Mande-nos uma mensagem!</h2>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span class="text">Primeiro Nome</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span class="text">Último Nome</span>
+                    <span class="line"></span>
+                </div>
             </div>
         </div>
-        
-        <div class="col">
-            <div class="inputBox">
-                <input type="text" name="" required="required">
-                <span class="text">Último Nome</span>
-                <span class="line"></span>
-            </div>
-        </div>
-    </div>
 
     
-    <div class="row100">
-        <div class="col">
-            <div class="inputBox">
-                <input type="text" name="" required="required">
-                <span class="text">Email</span>
-                <span class="line"></span>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span class="text">Email</span>
+                    <span class="line"></span>
+                </div>
             </div>
-        </div>
         
-        <div class="col">
-            <div class="inputBox">
-                <input type="text" name="telefone" id="telefone" maxlength="15" autocomplete="off" required="required">
-                <span class="text">Telefone</span>
-                <span class="line"></span>
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="telefone" id="telefone" maxlength="15" autocomplete="off" required="required">
+                    <span class="text">Telefone</span>
+                    <span class="line"></span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row100">
-        <div class="col">
-            <div class="inputBox textarea">
-                <textarea required="required"></textarea>
-                <span class="text">Escreva Sua Mensagem Aqui</span>
-                <span class="line"></span>
+        <div class="row100">
+            <div class="col">
+                <div class="inputBox textarea">
+                    <textarea required="required"></textarea>
+                    <span class="text">Escreva Sua Mensagem Aqui</span>
+                    <span class="line"></span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="row100">
-        <div class="col">
-            <input type="submit" value="Enviar">
+        <div class="row100">
+            <div class="col">
+                <input type="submit" value="Enviar">
+            </div>
         </div>
-    </div>
     </div>   
 </section>
 

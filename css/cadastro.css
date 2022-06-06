@@ -15,7 +15,7 @@ height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: #07058D;
+background-color: #0b095e;
 }
 
 /* Tela Inicial */
@@ -34,13 +34,13 @@ background-color: #07058D;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #d60808;
+    background-color: #c20303;
     z-index: 999;
     text-align: center;
 }
 
 .header.active{
-    background-color: #d60808;
+    background-color: #c20303;
 }
 
 a{
@@ -61,7 +61,7 @@ a{
 }
 
 .a-menu:hover{
-    color: #d60808;
+    color: #c20303;
     background-color: black;
 }
 
@@ -76,7 +76,7 @@ a{
 }
 
 .a-menu-inicial:hover{
-color: #d60808;
+color: #c20303;
 background-color: black;
 }
 
@@ -143,7 +143,7 @@ form{
     font-family: 'Poppins', sans-serif;
     width: 100%;
     max-width: 800px;
-    background-color: gray;
+    background-color: rgb(184, 182, 182);
     padding: 50px;
     margin-top: 70px;
 }
@@ -226,7 +226,7 @@ input[type="checkbox"]{
     transition: 0.5ms ease-in;
 }
   
-.olhe {
+.olho {
     cursor: pointer;
     position: absolute;
     width: 20px;
