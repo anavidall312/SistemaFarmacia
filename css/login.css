@@ -146,6 +146,7 @@ h1{
 }
 
 form{
+    background-color:  rgb(206, 203, 203);
     font-family: 'Poppins', sans-serif;
     background-color:  rgb(182, 179, 179);
     transform: translate(-50%, -40%);
