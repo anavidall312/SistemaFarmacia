@@ -272,7 +272,7 @@ section{
     position: absolute;
     background-color: white;
     width: 50vw;
-    height: 500px;
+    height: 600px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -298,13 +298,14 @@ form{
 }
 
 .textarea{
+    padding: 5px;
     width: 40%;
     height: 19vh;
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.text{
+/* .text{
     position: absolute;
     top: 0;
     left: 0;
@@ -315,7 +316,7 @@ form{
     transition: 0.5s;
     pointer-events: none;
     font-family: 'Poppins', sans-serif;
-}
+} */
 
  input:focus + .text,
  input:valid + .text,

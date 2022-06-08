@@ -39,59 +39,53 @@
     </header>
 
     <section class="section">
-        <div class="card">
-            <a href="pagina-coringa.php" class="venda_produto">
-            <div class="imagem">
-                <img src="../img-produtos/paracetamol.png" alt="...">
-            </div>
-            <div class="content">
-                <h4>Paracetamol 750mg<br>20 Cápsulas</h4>
-                <p class="texto" >R$ 60,00</p>
-                <a class="comprar" href="#">Comprar</a>
-            </div>
-            </a>
-        </div>
+<!------------------------------------------------------------------------------------->
+
+<?php
+
+include_once('conexão.php');
+$sqlProdutos = "SELECT * FROM produtos ORDER BY id DESC";
+$resultProdutos = $conn->query($sqlProdutos);
+
+ while($user_data = mysqli_fetch_assoc($resultProdutos)):
+
+?>
+
+
 <!------------------------------------------------------------------------------------->
         <div class="card">
             <a href="pagina-coringa.php" class="venda_produto">
                 <div class="imagem">
-                    <img src="../img-produtos/sabonete dove.png" alt="...">
+                    <img src="<?php echo $user_data['imagem']?>" alt="...">
                 </div>
                 <div class="content">
-                    <h4>Sabonete Dove<br>75 Gramas</h4>
-                    <p class="texto" >R$ 60,00</p>
+                    <h4><?php echo $user_data['nome']?><br><?php echo $user_data['descrição']?></h4>
+                    <p class="texto"><?php echo $user_data['valor'] ?> R$</p>
                     <a class="comprar" href="#">Comprar</a>
                 </div>
             </a>
         </div>
+        <?php 
+        endwhile;
+        ?>
 <!------------------------------------------------------------------------------------->
-        <div class="card">
-            <a href="pagina-coringa.php" class="venda_produto">
-                <div class="imagem">
-                        <img src="../img-produtos/shampoo.png" alt="...">
-                </div>
-                <div class="content">
-                    <h4>shampoo Antiresíduos Universal 1L<br></h4>
-                    <p class="texto" >R$ 60,00</p>
-                    <a class="comprar" href="#">Comprar</a>
-                </div>
-            </a>
-            </div>
-    <!------------------------------------------------------------------------------------->
-        <div class="card">
-            <a href="pagina-coringa.php" class="venda_produto">
-                <div class="imagem">
-                    <img src="../img-produtos/sabonete liquido.png" alt="...">
-                </div>
-                <div class="content">
-                    <h5>Sabonete Líquido<br>200ml</h5>
-                    <p class="texto">R$ 60,00</p>
-                    <a class="comprar" href="#">Comprar</a>
-                </div>
-            </a>
-            </div>
+       
     </section>
 
 </body>
 <script src="../scripts/mobile-navbar.js"></script>
+<script>
+    var search = document.getElementById('pesquisar');
+
+search.addEventListener("keydown", function(event){
+    if(event.key === "Enter")
+    {
+        searchData();
+    }
+});
+
+    function searchData(){
+        window.location = 'sistema.php?search='+search.value;
+    }
+</script>
 </html>

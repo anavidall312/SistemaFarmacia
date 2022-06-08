@@ -1,30 +1,38 @@
 <?php
+if(!empty($_GET['id'])){
+    include_once('conexão.php');
 
-if($_SERVER["REQUEST_METHOD"] == "POST") {
+$id = $_GET['id'];
 
-    require('../pages/conexão.php');
-    
-        $nome = $_POST["nome"];
-        $unidades = $_POST["unidades"];
-        $valor = $_POST["valor"];
-        $desc = $_POST["descricao"];
-        $imagem = $_POST["imagem"];
-    
-    
-        $stmt = $conn->prepare("INSERT INTO produtos (nome, unidades, valor, descrição, imagem) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("sisss", $nome, $unidades, $valor, $desc, $imagem);
-    
-    
-        $stmt->execute();
-    
-    
-        $stmt->close();
-        $conn->close();
-        header('Location: ../pages/sistema.php');
+$sqlSelect = "SELECT * FROM produtos WHERE id=$id";
+
+
+$result = $conn->query($sqlSelect);
+
+if($result->num_rows > 0){
+
+    while($user_data = mysqli_fetch_assoc($result)){
+    $nome = $user_data["nome"];
+    $valor = $user_data["valor"];
+    $unidades = $user_data["unidades"];
+    $imagem = $user_data["imagem"];
+    $desc = $user_data["descrição"];
     }
 
 
+} else {
+    header('Location: sistema.php');
+}
+
+    
+
+
+
+
+}
+
 ?>
+
 
 
 <!DOCTYPE html>
@@ -60,30 +68,31 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     </header>
 
     <section class="section">
-        <form action="cadastrar-produto.php" method="POST">
+        <form action="saveEditProduto.php" method="POST">
             <h1 class="title" >Adicionar novo Produto</h1>
             <div class="item">
-                <input type="text" class="input" name="nome" placeholder="nome do produto" onclick="verifica()">
+                <input type="text" class="input" name="nome" placeholder="nome do produto" value="<?php echo $nome?>" onclick="verifica()">
                 <!-- <span class="text">Nome do Produto</label> -->
             </div>
             <div class="item">
-                <input type="number" name="unidades" class="input" placeholder="n de unidades">
+                <input type="number" name="unidades" class="input" placeholder="n de unidades" value="<?php echo $unidades?>" >
                 <!-- <span class="text">Nº de Unidades</label> -->
             </div>
             <div class="item">
-                <input type="text" class="input" name="valor" id="valor" placeholder="preço">
+                <input type="text" class="input" name="valor" id="valor" placeholder="preço" value="<?php echo $valor?>" >
                 <!-- <span class="text">Preço</label> -->
             </div>
             <div class="item">
-                <input type="text" class="input" name="imagem" id="imagem" placeholder="Link da Imagem">
+                <input type="text" class="input" name="imagem" id="imagem" placeholder="Link da Imagem" value="<?php echo $imagem?>" >
                 <!-- <span class="text">Preço</label> -->
             </div>
             <div class="item">
-                <textarea name="descricao" id="descricao" class="textarea" placeholder=" Descrição"></textarea>
+                <textarea name="descricao" id="descricao" class="textarea" placeholder=" Descrição"><?php echo $desc?></textarea>
                 <!-- <span class="text">Descrição</label> -->
             </div>
             <div class="item">
-                <input type="submit" class="input" value="Adicionar">
+                <input type="hidden" name="id" value="<?php echo $id?>">
+                <input type="submit" name="update" id="update" class="input" value="Alterar">
             </div>
         </form>
     </section>

@@ -1,7 +1,5 @@
 <?php
 
-/*if($_SERVER["REQUEST_METHOD"] == "POST") {
-*/
     if(!empty($_GET['id'])){
     include_once('conexão.php');
 
