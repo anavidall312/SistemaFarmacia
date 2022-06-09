@@ -1,3 +1,23 @@
+<?php
+session_start();
+include_once('conexão.php');
+if(!empty($_GET['search'])){
+
+    $data = $_GET['search'];
+    $sql = "SELECT * FROM produtos WHERE nome LIKE '%$data%' or descrição LIKE '%$data%' ORDER BY id DESC";
+
+} else {
+    $sql = "SELECT * FROM produtos ORDER BY id DESC";
+}
+
+$result = $conn->query($sql);
+
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -56,7 +76,7 @@ $resultProdutos = $conn->query($sqlProdutos);
         <div class="card">
             <a href="pagina-coringa.php" class="venda_produto">
                 <div class="imagem">
-                    <img src="<?php echo $user_data['imagem']?>" alt="...">
+                    <img src="<?php echo $user_data['imagem']?>" alt="Not found!">
                 </div>
                 <div class="content">
                     <h4><?php echo $user_data['nome']?><br><?php echo $user_data['descrição']?></h4>
@@ -85,7 +105,7 @@ search.addEventListener("keydown", function(event){
 });
 
     function searchData(){
-        window.location = 'sistema.php?search='+search.value;
+        window.location = 'produtos.php?search='+search.value;
     }
 </script>
 </html>
