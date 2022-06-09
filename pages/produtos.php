@@ -1,16 +1,15 @@
 <?php
-session_start();
 include_once('conexão.php');
 if(!empty($_GET['search'])){
 
     $data = $_GET['search'];
-    $sql = "SELECT * FROM produtos WHERE nome LIKE '%$data%' or descrição LIKE '%$data%' ORDER BY id DESC";
+    $sqlProdutos = "SELECT * FROM produtos WHERE nome LIKE '%$data%' or descrição LIKE '%$data%' ORDER BY id DESC";
 
 } else {
-    $sql = "SELECT * FROM produtos ORDER BY id DESC";
+    $sqlProdutos = "SELECT * FROM produtos ORDER BY id DESC";
 }
 
-$result = $conn->query($sql);
+$resultProdutos = $conn->query($sqlProdutos);
 
 
 
@@ -51,7 +50,7 @@ $result = $conn->query($sql);
                             </svg>
                         </button>
                     </div>
-                    <li><a class="a-menu-inicial" href="../index.php">Início</a></li>
+                    <li><a class="a-menu" href="../index.php">Início</a></li>
                     <li><a class="a-menu" href="login.php">Login</a></li>
                 </ul>
             </nav>
@@ -63,9 +62,8 @@ $result = $conn->query($sql);
 
 <?php
 
-include_once('conexão.php');
-$sqlProdutos = "SELECT * FROM produtos ORDER BY id DESC";
-$resultProdutos = $conn->query($sqlProdutos);
+// $sqlProdutos = "SELECT * FROM produtos ORDER BY id DESC";
+// $resultProdutos = $conn->query($sqlProdutos);
 
  while($user_data = mysqli_fetch_assoc($resultProdutos)):
 
