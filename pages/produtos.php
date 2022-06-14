@@ -72,7 +72,7 @@ $resultProdutos = $conn->query($sqlProdutos);
 
 <!------------------------------------------------------------------------------------->
         <div class="card">
-            <a href="pagina-coringa.php" class="venda_produto">
+            <a href="pagina-dinamica.php" class="venda_produto">
                 <div class="imagem">
                     <img src="<?php echo $user_data['imagem']?>" alt="Not found!">
                 </div>
