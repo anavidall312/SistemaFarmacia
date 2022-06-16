@@ -1,6 +1,7 @@
 <!--
 
 <?php
+/*
  session_start();
  // print_r($_SESSION);
 
@@ -19,6 +20,7 @@
 }
 
 $result = $conn->query($sql);
+*/
 ?>
 
 

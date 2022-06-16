@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     
     
         $stmt = $conn->prepare("INSERT INTO produtos (nome, unidades, valor, descrição, imagem) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("sisss", $nome, $unidades, $valor, $desc, $imagem);
+        $stmt->bind_param("siiss", $nome, $unidades, $valor, $desc, $imagem);
     
     
         $stmt->execute();
@@ -63,15 +63,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="cadastrar-produto.php" method="POST">
             <h1 class="title" >Adicionar novo Produto</h1>
             <div class="item">
-                <input type="text" class="input" name="nome" placeholder="nome do produto" onclick="verifica()">
+                <input type="text" class="input" name="nome" placeholder="Nome do produto" onclick="verifica()">
                 <!-- <span class="text">Nome do Produto</label> -->
             </div>
             <div class="item">
-                <input type="number" name="unidades" class="input" placeholder="n de unidades">
+                <input type="number" name="unidades" class="input" placeholder="Número de unidades">
                 <!-- <span class="text">Nº de Unidades</label> -->
             </div>
             <div class="item">
-                <input type="text" class="input" name="valor" id="valor" placeholder="preço">
+                <input type="number" class="input" name="valor" id="valor" placeholder="Preço do Produto">
                 <!-- <span class="text">Preço</label> -->
             </div>
             <div class="item">

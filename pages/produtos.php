@@ -41,6 +41,7 @@ $resultProdutos = $conn->query($sqlProdutos);
                     <div class="linha2"></div>
                     <div class="linha3"></div>
                 </div>
+                
                 <ul class="nav-list">
                     <div class="box-search">
                         <input type="search" class="inputbootstrap" placeholder="Nome do produto" id="pesquisar">
