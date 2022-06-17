@@ -9,7 +9,7 @@ function execmascara(){
 function mtel(v){
     v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
     v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
-    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígito
     return v;
 }
 function id( el ){
@@ -21,24 +21,6 @@ window.onload = function(){
 	}
 }
 
-
-
-/*
- var cpf = document.querySelector("#cpf");
-
- cpf.addEventListener("blur", function(){
-    cpf.value = cpf.value.match(/.{1,3}/g).join(".").replace(/\.(?=[^.]*$)/,"-");
- });
- */
-
-
-/*
- var rg = document.querySelector("#rg");
-
- rg.addEventListener.off("blur", function(){
-     rg.value = rg.value.match(/.{1,3}/g).join(".").replace(/\.(?=[^.]*$)/,"-");
- });
-*/
 
 
 function formatarCampo(campoTexto) {
