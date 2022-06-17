@@ -83,7 +83,7 @@ $data = $resultProdutos->fetch_assoc();
             <label for="unidades">Quantidade: </label>
             <input type="number" name="unidades" id="unidades">
             <?php
-            echo "<br><br>O Número de Unidades Disponíveis é: ";
+            echo "<br><br>Número de Unidades Disponíveis: ";
             echo $data['unidades']
             ?>
             <!-- <label for="unidades">Entrega: </label>

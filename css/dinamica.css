@@ -21,6 +21,7 @@
 
 body{
     font-family:'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -206,7 +207,7 @@ transform: translateX(0);
 }
 
 .card{
-    width: 30vw;
+    width: 40vw;
     position: relative;
     background-color: rgb(190, 190, 190);
     border-radius: 10px;
@@ -215,6 +216,14 @@ transform: translateX(0);
 
 .card img{
    background-size: cover;
+   position: relative;
+   left: 50%;
+   transform: translate(-50%);
+}
+
+.opções{
+    position: relative;
+    bottom: -30px;
 }
 
 .valor{

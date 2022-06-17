@@ -8,8 +8,11 @@
     padding: 0;
 }
 
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
-    overflow-x: hidden;
 width: 100vw;
 height: 100vh;
 overflow-x: hidden;
@@ -18,7 +21,7 @@ background-color:  #0b095e;
 font-family: 'Poppins', sans-serif;
 }
 
-/* Tela Inicial */
+/* Header */
 .container{
     width: 100%;
     max-width: 120rem;
@@ -102,52 +105,19 @@ display: flex;
     letter-spacing: 3px;
     margin-left: 32px;
 }
+/* Fim do Header */
 
-
-
-
-@media (max-width: 999px){
-
-    .alinhamento{
-        position: relative;
-    }
-    form{
-            
-            min-width: 70vw;
-            min-height: 60vh;
-    }
-    .eye{
-        margin: auto;
-        position:relative;
-        width: 200px;
-    }
-    .input{
-        zoom: 0;
-        margin-bottom: 20px;
-        padding: 8px;
-        outline: none;
-        background-color: white;
-        border: 0;
-        width: 100%;
-        height: 30px;
-        color: black;
-    }
-    h2{
-        display: none;
-    }
+h2{
+    color: black;
 }
-
 
 h1{
     margin-bottom: 50px;
     padding-top: 15px;
     color: black;
-    font-family: 'Poppins', sans-serif;
 }
 
 form{
-    background-color:  rgb(206, 203, 203);
-    font-family: 'Poppins', sans-serif;
     background-color:  rgb(182, 179, 179);
     transform: translate(-50%, -40%);
     position: relative;     
@@ -165,58 +135,65 @@ form{
 .eye{
     margin: auto;
     position:relative;
-    width: 270px;
+    width: 300px;
 }
 
 .input::placeholder{
     color: black;
 }
 
-.input{
-    zoom: 0;
+#div-input .input{
     margin-bottom: 20px;
     padding: 8px;
     outline: none;
     background-color: white;
     border: 0;
+    border-radius: 10px;
     width: 100%;
-    height: 30px;
+    height: 35px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input{
+    margin-bottom: 20px;
+    padding: 8px;
+    outline: none;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
     color: black;
     font-family: 'Poppins', sans-serif;
 }
 
 input[type="submit"]{
-    text-align: center;
-    outline: none;
-    margin-left: 31px;
-    padding-right: 5px;
-    background-color: whitesmoke;
-    border: 1px solid gray;
-    width: 80px;
-    height: 30px;
-    cursor: pointer;
+    outline: none; 
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    transition: 0.5s;
 }
 
-input[type="checkbox"]{
-    outline: none;
-    border: 0;
+input[type="submit"]:hover{
+transform: translateY(-10px);
 }
 
 .cadastro{
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    width: 80px;
-    height: 30px;
     text-decoration: none;
-    border: 1px solid gray;
     padding: 6px;
     color: black;
-    background-color: whitesmoke;
-    transition: 0.5ms ease-in;
+    background-color: gray;
+    transition: 0.5s;
+    border-radius: 10px;
 }
 
-
+.cadastro:hover{
+    color: black;
+    transform: translateY(-10px);
+}
   
 .olho {
     cursor: pointer;
@@ -228,7 +205,6 @@ input[type="checkbox"]{
 h2{
     position: absolute;
     right: 49%;
-    font-family:'Fjalla One', sans-serif;
 }
 
 
@@ -239,10 +215,85 @@ h2{
   }
 
   #div-input i {
-    cursor: pointer;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+        position: absolute;
+        right: 7px;
+        top: 3px;
   }
 
- #div-input #olho-fechado{
-display: none;
-cursor: pointer;
+  .justify{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    justify-content: space-evenly;
   }
+
+
+
+  @media (max-width: 999px){
+
+    .alinhamento{
+        position: relative;
+    }
+    form{
+            
+        width: 100vw;
+        height: 40vh;
+    }
+    .eye{
+        margin: auto;
+        position:relative;
+        width: 80vw;
+    }
+
+    #div-input .input{
+        height: 45px;
+    }
+    .input{
+        margin-bottom: 20px;
+        padding: 8px;
+        outline: none;
+        background-color: white;
+        border: 0;
+        width: 100%;
+        height: 45px;
+        color: black;
+    }
+    h2{
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+
+    .alinhamento{
+        position: relative;
+    }
+    form{  
+        width: 100vw;
+        height: 30%;
+    }
+    .eye{
+        margin: auto;
+        position:relative;
+        width: 80vw;
+    }
+    .input{
+        margin-bottom: 20px;
+        padding: 8px;
+        outline: none;
+        background-color: white;
+        border: 0;
+        width: 100%;
+        height: 35px;
+        color: black;
+    }
+    h2{
+        display: none;
+    }
+}

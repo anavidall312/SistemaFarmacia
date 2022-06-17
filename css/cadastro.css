@@ -188,22 +188,26 @@ div.eye .input:valid ~ label{
 
 
 input[type="submit"]{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%); 
-    text-align: center;
     outline: none;
-    padding-right: 5px;
-    background-color: whitesmoke;
-    border: 1px solid gray;
-    width: 80px;
-    height: 30px;
-    cursor: pointer;
+    background-color: gray;
+    border: none;
+    padding: 6px;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
-input[type="checkbox"]{
-    outline: none;
-    border: 0;
+.justify{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+input[type="submit"]:hover{
+    transform: translateY(-10px);
+}
+
+h2{
+    color: black;
 }
 
 @media (max-width: 999px){
@@ -212,7 +216,7 @@ input[type="checkbox"]{
     }
 }
 
-.cadastro{
+/* .cadastro{
     position: relative;
     z-index: 1;
     text-align: center;
@@ -224,7 +228,7 @@ input[type="checkbox"]{
     color: black;
     background-color: whitesmoke;
     transition: 0.5ms ease-in;
-}
+} */
   
 .olho {
     cursor: pointer;
@@ -237,14 +241,19 @@ input[type="checkbox"]{
 h2{
     position: absolute;
     right: 47%;
-    font-family:'Fjalla One', sans-serif;
 }
 
 #inpute > * {
     height: 1.3em;
     float: left;
   }
-  
-  #inpute img {
+ 
+
+  i{
+    width: 23px;
+    height: 23px;
     cursor: pointer;
+    position: absolute;
+    right: 7px;
+    top: 3px;
   }

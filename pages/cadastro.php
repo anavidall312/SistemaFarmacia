@@ -93,14 +93,15 @@ header('Location: login.php');
                 <label for="email">Email</label>
             </div>
             <div class="eye">
-                <!-- <div class="inpute">
-                    <input class="input" name="senha" type="password" id="input" required/>
+                <div id="div-input">
+                    <input type="password" class="input" name="senha" required/>
                     <label for="senha">Senha</label>
-                    <img src="http://i.stack.imgur.com/H9Sb2.png" alt="">
-                </div> -->
-            <div id="div-input">
-                <input type="password" class="input" name="senha" required/>
-                <label for="senha">Senha</label>
+                    <i class="bi bi-eye">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                        </svg>
+                    </i>
                 </div>
             </div>
 
@@ -117,13 +118,14 @@ header('Location: login.php');
                 <input class="input" type="text" name="telefone" id="telefone" maxlength="15" autocomplete="off" required/>
                 <label for="telefone">Telefone</label>
             </div>
-            <input type="submit" value="Enviar">
-
+            <div class="justify">
+                <input type="submit" value="Enviar">
+            </div>
         </form>
     </div> 
 
 <script src="../scripts/olho2.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
 <script src="../scripts/telefone.js"></script>
 </body>
 </html>

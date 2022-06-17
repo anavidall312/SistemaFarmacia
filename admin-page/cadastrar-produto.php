@@ -52,8 +52,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                     <div class="linha3"></div>
                 </div>
                 <ul class="nav-list">
-                    <li><a class="a-menu" href="#">Área Admin</a></li>
-                    <li><a class="a-menu" href="pages/cadastro.php">Cadastro Admin</a></li>
+                    <li><a class="a-menu" href="../pages/sistema.php">Área Admin</a></li>
+                    <li><a class="a-menu" href="cadastrar-admin.php">Cadastro Admin</a></li>
                 </ul>
             </nav>
         </div>

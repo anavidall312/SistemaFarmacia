@@ -73,17 +73,17 @@ $resultProdutos = $conn->query($sqlProdutos);
 
 <!------------------------------------------------------------------------------------->    
 <div class="card">
-            <a href="pagina-dinamica.php/?id=<?php echo $user_data['id'];?>" class="venda_produto">
-                <div class="imagem">
-                    <img src="<?php echo $user_data['imagem']?>" alt="Not found!">
-                </div>
-                <div class="content">
-                    <h4><?php echo $user_data['nome']?><br><?php echo $user_data['descrição']?></h4>
-                    <p class="texto"><?php echo $user_data['valor'] ?> R$</p>
-                    <a  class="comprar">Comprar</a>
-                </div>
-            </a>
+    <a href="pagina-dinamica.php/?id=<?php echo $user_data['id'];?>" class="venda_produto">
+        <div class="imagem">
+            <img src="<?php echo $user_data['imagem']?>" alt="Not found!">
         </div>
+        <div class="content">
+            <h4><?php echo $user_data['nome']?><br><?php echo $user_data['descrição']?></h4>
+            <p class="texto"><?php echo $user_data['valor'] ?> R$</p>
+            <a  class="comprar">Comprar</a>
+        </div>
+    </a>
+</div>
 
 <!------------------------------------------------------------------------------------->
         <?php 
