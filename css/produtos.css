@@ -145,15 +145,15 @@ color: var(--yellow-solid);
 }
 
 .logo img{
-    margin-top: -30px;
     width: 120px;
+    margin-top: -30px;
 }
 
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-     height: 8vh;
+    height: 8vh;
 }
 
 main{
@@ -175,6 +175,7 @@ flex: 1;
 .mobile-menu{
     cursor: pointer;
     display: none;
+    margin-top: -30px;
 }
 
 .mobile-menu div{
@@ -191,7 +192,7 @@ overflow-x: hidden;
     }
     .nav-list{
         position: absolute;
-        top: 12vh;
+        top: 9vh;
         right: 0;
         width: 100vw;
         height: 92vh;

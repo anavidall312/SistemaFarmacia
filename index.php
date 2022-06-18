@@ -122,7 +122,7 @@
         
             <div class="col">
                 <div class="inputBox">
-                    <input type="text" name="telefone" id="telefone" maxlength="15" autocomplete="off" required="required">
+                    <input type="text" name="telefone" id="telefone" maxlength="15" onfocus="javascript: telefone(this);" autocomplete="off" required="required">
                     <span class="text">Telefone</span>
                     <span class="line"></span>
                 </div>
@@ -188,5 +188,4 @@
 
 </body>
 <script src="scripts/mobile-navbar.js"></script>
-<script src="scripts/telefone.js"></script>
 </html>

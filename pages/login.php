@@ -63,7 +63,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-    <div class="alinhamento">
+    <!-- <div class="alinhamento"> -->
         <form method="POST" action="controle.php">
             <h1>Insira seus dados</h1>
             <div class="eye">
@@ -86,9 +86,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="submit" value="Enviar"/>
             </div>
         </form>
-    </div> 
+    <!-- </div>  -->
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
 <script src="../scripts/olho2.js"></script>
+<script src="../scripts/mobile-navbar.js"></script>
 </body>
 </html>
