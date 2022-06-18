@@ -46,7 +46,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="#" class="logo">
                     <img src="../img/logo sem fundo.png" alt="logo">
                 </a>
-                <h2>Login</h2>
                 <div class="mobile-menu">
                     <div class="linha1"></div>
                     <div class="linha2"></div>

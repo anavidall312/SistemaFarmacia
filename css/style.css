@@ -429,7 +429,7 @@ section::after{
 
 .conteudo{
     position: relative;
-    z-index: 1000;
+    z-index: 3;
     width: 100%;
     max-width: 1000px;
     padding: 50px;
@@ -597,7 +597,15 @@ border-radius: 2px;
 
 .medias{
     cursor: pointer;
+}
 
+.medias svg{
+    position: relative;
+    transition: 0.5s;
+}
+
+.medias svg:hover{
+transform: translateY(-10px);
 }
 
 h3{
@@ -617,10 +625,14 @@ h3{
 .footer{
     padding: 20px;
     width: 100vw;
-    height: 7vh;
+    height: 9vh;
     text-align: center;
-    font-size: 18px;
     background-color: rgb(48, 48, 48);
     justify-content: center;
     color: white;
+}
+
+.footer h4{
+font-size: 18px;
+font-weight: lighter;
 }

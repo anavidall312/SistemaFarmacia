@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
+:root {
+    --dark-color: #2d2c2c;
+    --purple-solid: #faf7fc;
+    --orange-transparent: rgba(9, 255, 0, 0.7);
+    --yellow-transparent-alt: rgba(246, 212, 101, 0.2);
+    --pink-transparent-alt: rgb(25, 117, 255);
+    --pink-alt: rgb(42, 192, 252);
+    --orange-light: #ff653a;
+    --yellow-solid: #55aad1;
+}
 
 *{
     box-sizing: border-box;
@@ -10,12 +20,12 @@
 
 body{
     overflow-x: hidden;
-width: 100vw;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: #0b095e;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink-transparent-alt);
 }
 
 /* Tela Inicial */
@@ -57,12 +67,10 @@ a{
     letter-spacing: 1px;
     transition: all 0.5s ease;
     font-size: 26px;
-    border: 2px solid black;
 }
 
 .a-menu:hover{
-    color: #c20303;
-    background-color: black;
+    color: var(--pink-transparent-alt);
 }
 
 .a-menu-inicial{
@@ -76,8 +84,7 @@ a{
 }
 
 .a-menu-inicial:hover{
-color: #c20303;
-background-color: black;
+color: var(--pink-transparent-alt);
 }
 
 .logo img{

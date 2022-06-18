@@ -63,7 +63,6 @@ header('Location: login.php');
                 <a href="#" class="logo">
                     <img src="../img/logo sem fundo.png" alt="logo">
                 </a>
-                <h2>Cadastro</h2>
                 <div class="mobile-menu">
                     <div class="linha1"></div>
                     <div class="linha2"></div>
@@ -106,11 +105,10 @@ header('Location: login.php');
             </div>
 
             <div class="eye">
-            <input type="text" class="input" name="cpf" id="cpf" onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="11" autocomplete="off" required />
+                <input type="text" class="input" name="cpf" id="cpf" onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="11" autocomplete="off" required />
                 <label for="cpf">Cpf</label>
             </div>
             <div class="eye">
-                <!-- <input class="input" type="text" name="rg" id="rg" maxlength="11" autocomplete="off" required/> -->
                 <input type="text" class="input" name="rg" id="rg" onfocus="javascript: retirarFormatacao(this);" onblur="javascript: formatarCampo(this);" maxlength="11" autocomplete="off" required />
                 <label for="rg">Rg</label>
             </div>
@@ -119,13 +117,12 @@ header('Location: login.php');
                 <label for="telefone">Telefone</label>
             </div>
             <div class="justify">
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Cadastrar">
             </div>
         </form>
     </div> 
 
 <script src="../scripts/olho2.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
 <script src="../scripts/telefone.js"></script>
 </body>
 </html>

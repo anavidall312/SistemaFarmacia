@@ -57,7 +57,6 @@ if($result->num_rows > 0){
                 <a href="#" class="logo">
                     <img src="../img/logo sem fundo.png" alt="logo">
                 </a>
-                <h2>Cadastro</h2>
                 <div class="mobile-menu">
                     <div class="linha1"></div>
                     <div class="linha2"></div>
@@ -70,13 +69,13 @@ if($result->num_rows > 0){
         </div>
     </header>
 
-
+<!----------------------------Fim do Header------------------------------->
 
 
     <div class="alinhamento">
         <form method="POST" action="saveEdit.php">
             
-            <h1>Insira seus dados</h1>
+            <h1>Insira novos dados</h1>
             <div class="eye">
                 <input class="input" type="text" id="nome" name="nome" value="<?php echo $nome ?>" placeholder="Nome completo" required>
             </div>
@@ -84,10 +83,11 @@ if($result->num_rows > 0){
                 <input class="input" type="email" id="email" name="email" value="<?php echo $email ?>" placeholder="Email" required>
             </div>
             <div class="eye">
-                <input class="input" type="text" id="senha" name="senha" value="<?php echo $senha ?>" placeholder="Senha" id="pass" required>
-                    <i>
-                        <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho">
-                    </i>
+
+            <div id="div-input">
+                    <input type="text" class="input" id="senha" name="senha" value="<?php echo $senha ?>" required/>
+                    <label for="senha">Senha</label>
+                </div>
             </div>
 
 
@@ -103,18 +103,11 @@ if($result->num_rows > 0){
                 <input class="input" type="text" name="telefone" id="telefone" maxlength="16" value="<?php echo $telefone ?>" required>
                 <label for="telefone">Telefone</label>
             </div>
-            <!-- <div class="eye">
-                <input class="input" type="text" name="contato" id="contato" placeholder="Contato">
-            </div>
-            <div class="eye">
-                <input class="input" type="text" name="telefone" id="telefone" placeholder="Tel. (88) 99999-9999" maxlength="15">
-            </div>
-            <input name="robo" type="checkbox"> 
-            <label for="robo" style="color:white;">Não sou um robô</label> -->
             <br><br> 
             <input type="hidden" name="id" value="<?php echo $id?>">
-            <input type="submit" name="update" id="update" value="Alterar">
-
+            <div class="justify">
+                <input type="submit" name="update" id="update" value="Alterar">
+            </div>
     </form>
 </div> 
 
