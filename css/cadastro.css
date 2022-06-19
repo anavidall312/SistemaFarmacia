@@ -96,7 +96,6 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* font-family: 'Lobster', cursive; */
      height: 8vh;
 }
 
@@ -155,13 +154,13 @@ form{
     margin-top: 70px;
 }
 
-div.eye{
+.eye{
     width: 100%;
     margin: 30px 0;
     position: relative;
 }
 
-div.eye label{
+.eye label{
     font-size: 16px;
     position: absolute;
     left: 0;
@@ -171,7 +170,7 @@ div.eye label{
     left: 5px;
 }
 
-div.eye .input{
+.eye .input{
     border-radius: 8px;
     width: 100%;
     padding: 5px;
@@ -216,26 +215,6 @@ input[type="submit"]:hover{
 h2{
     color: black;
 }
-
-@media (max-width: 999px){
-    h2{
-        display: none;
-    }
-}
-
-/* .cadastro{
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    width: 80px;
-    height: 30px;
-    text-decoration: none;
-    border: 1px solid gray;
-    padding: 6px;
-    color: black;
-    background-color: whitesmoke;
-    transition: 0.5ms ease-in;
-} */
   
 .olho {
     cursor: pointer;
@@ -243,11 +222,6 @@ h2{
     width: 20px;
     left: 90%;
     top: 6px;
-}
-
-h2{
-    position: absolute;
-    right: 47%;
 }
 
 #inpute > * {
