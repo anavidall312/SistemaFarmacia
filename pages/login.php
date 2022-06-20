@@ -46,11 +46,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <a href="#" class="logo">
                     <img src="../img/logo sem fundo.png" alt="logo">
                 </a>
-                <div class="mobile-menu">
-                    <div class="linha1"></div>
-                    <div class="linha2"></div>
-                    <div class="linha3"></div>
-                </div>
                 <ul class="nav-list">
                     <li><a class="a-menu" href="../index.php">Início</a></li>
                     <li><a class="a-menu" href="cadastro.php">Cadastro</a></li>
@@ -87,8 +82,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     <!-- </div>  -->
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
 <script src="../scripts/olho2.js"></script>
-<script src="../scripts/mobile-navbar.js"></script>
 </body>
 </html>
