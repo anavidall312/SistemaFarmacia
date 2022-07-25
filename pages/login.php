@@ -57,7 +57,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-    <!-- <div class="alinhamento"> -->
         <form method="POST" action="controle.php">
             <h1>Insira seus dados</h1>
             <div class="eye">
@@ -77,10 +76,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="justify">
                 <a href="cadastro.php" class="cadastro">Cadastre-se</a>
-                <input type="submit" value="Enviar"/>
+                <input type="submit" value="Entrar"/>
             </div>
         </form>
-    <!-- </div>  -->
 
 <script src="../scripts/olho2.js"></script>
 </body>

@@ -63,23 +63,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="cadastrar-produto.php" method="POST">
             <h1 class="title" >Adicionar novo Produto</h1>
             <div class="item">
-                <input type="text" class="input" name="nome" placeholder="Nome do produto" onclick="verifica()">
+                <input type="text" class="input" name="nome" placeholder="Nome do produto" onclick="verifica()" required>
                 <!-- <span class="text">Nome do Produto</label> -->
             </div>
             <div class="item">
-                <input type="number" name="unidades" class="input" placeholder="Número de unidades">
+                <input type="number" name="unidades" class="input" placeholder="Número de unidades" required>
                 <!-- <span class="text">Nº de Unidades</label> -->
             </div>
             <div class="item">
-                <input type="number" class="input" name="valor" id="valor" placeholder="Preço do Produto">
+                <input type="number" class="input" name="valor" id="valor" placeholder="Preço do Produto" required>
                 <!-- <span class="text">Preço</label> -->
             </div>
             <div class="item">
-                <input type="text" class="input" name="imagem" id="imagem" placeholder="Link da Imagem">
+                <input type="text" class="input" name="imagem" id="imagem" placeholder="Link da Imagem" required=".">
                 <!-- <span class="text">Preço</label> -->
             </div>
             <div class="item">
-                <textarea name="descricao" id="descricao" class="textarea" placeholder=" Descrição"></textarea>
+                <textarea name="descricao" id="descricao" class="textarea" placeholder=" Descrição" required></textarea>
                 <!-- <span class="text">Descrição</label> -->
             </div>
             <div class="item">
@@ -89,4 +89,5 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     </section>
     
 </body>
+<script src="../scripts/mobile-navbar.js"></script>
 </html>

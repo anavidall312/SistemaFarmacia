@@ -288,7 +288,7 @@ form{
 }
 
 .input{
-    width: 40%;
+    width: 60%;
     outline: none;
     border: 0;
     border-bottom: 2px solid gray;
@@ -299,31 +299,10 @@ form{
 
 .textarea{
     padding: 5px;
-    width: 40%;
+    width: 60%;
     height: 19vh;
     font-size: 20px;
     margin-bottom: 20px;
-}
-
-/* .text{
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 40px;
-    font-size: 18px;
-    padding: 0 10px;
-    display: block;
-    transition: 0.5s;
-    pointer-events: none;
-    font-family: 'Poppins', sans-serif;
-} */
-
- input:focus + .text,
- input:valid + .text,
- textarea:focus + .text,
- textarea:valid + .text{
-    top: -35px;
-    left: -10px;
 }
 
 .title{
@@ -342,5 +321,15 @@ form{
 }
 
 @media (max-width:750px){
-    
+    .section{
+        top: 60%;
+        width: 100vw;
+        height: 100vh;
+    }
+    .input{
+        width: 80%;
+    }
+    .textarea{
+        width: 80%;
+    }
 }

@@ -38,8 +38,8 @@
                     <div class="main-heading">
                         <h1 class="title">Farmácia Madre Paulina</h1>
                         <h2 class="subtitle">Quem sai ganhando é você</h2>
+                        <a href="pages/produtos.php" class="btn">Nossos Produtos</a>
                     </div>
-                    <a href="pages/produtos.php" class="btn btn-gradient">Nossos Produtos</a>
                 </div>
             </div>
 

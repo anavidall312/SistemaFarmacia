@@ -17,6 +17,30 @@ body{
     justify-content: center;
 }
 
+header{
+    height: 12vh;
+    width: 100vw;
+    background-color: rgb(25, 117, 255);;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items:  center;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: #55aad1;
+    font-family: 'Poppins' sans-serif;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+header a:hover{
+    color: white;
+}
+
 .h1{
     text-align: center;
 }
@@ -51,6 +75,7 @@ input[type="submit"]{
     padding: 5px;
     border-radius: 10px;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover{
@@ -84,21 +109,6 @@ width: 100vw;
 height: 60vh;
     }
 }
-
-/* @media(max-width: 400px){
-    form{
-        width: 100vh;
-        height: 60vh;
-    }
-} */
-
-@media (max-height: 660px){
-    form{
-        width: 100vw;
-        height: 90vh;
-    }
-}
-
 
 @media (max-height: 460px){
     form{

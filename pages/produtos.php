@@ -12,9 +12,6 @@ if(!empty($_GET['search'])){
 $resultProdutos = $conn->query($sqlProdutos);
 
 
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +33,14 @@ $resultProdutos = $conn->query($sqlProdutos);
                 <a href="#" class="logo">
                     <img src="../img/logo sem fundo.png" alt="logo">
                 </a>
+                <div class="box-search">
+                    <input type="search" class="inputbootstrap" placeholder="Nome do produto" id="pesquisar">
+                    <button onclick="searchData()" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
                 <div class="mobile-menu">
                     <div class="linha1"></div>
                     <div class="linha2"></div>
@@ -43,14 +48,6 @@ $resultProdutos = $conn->query($sqlProdutos);
                 </div>
                 
                 <ul class="nav-list">
-                    <div class="box-search">
-                        <input type="search" class="inputbootstrap" placeholder="Nome do produto" id="pesquisar">
-                        <button onclick="searchData()" class="btn btn-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg>
-                        </button>
-                    </div>
                     <li><a class="a-menu" href="../index.php">Início</a></li>
                     <li><a class="a-menu" href="login.php">Login</a></li>
                 </ul>
@@ -59,37 +56,23 @@ $resultProdutos = $conn->query($sqlProdutos);
     </header>
 
     <section class="section">
-<!------------------------------------------------------------------------------------->
 
-<?php
-
-// $sqlProdutos = "SELECT * FROM produtos ORDER BY id DESC";
-// $resultProdutos = $conn->query($sqlProdutos);
-
- while($user_data = mysqli_fetch_assoc($resultProdutos)):
-
-?>
-
-
-<!------------------------------------------------------------------------------------->    
-<div class="card">
-    <a href="pagina-dinamica.php/?id=<?php echo $user_data['id'];?>" class="venda_produto">
-        <div class="imagem">
-            <img src="<?php echo $user_data['imagem']?>" alt="Not found!">
+        <?php while($user_data = mysqli_fetch_assoc($resultProdutos)): ?>
+ 
+        <div class="card">
+            <a href="pagina-dinamica.php/?id=<?php echo $user_data['id'];?>" class="venda_produto">
+                <div class="imagem">
+                    <img src="<?php echo $user_data['imagem']?>" alt="Not found!">
+                </div>
+                <div class="content">
+                    <h4><?php echo $user_data['nome']?><br><?php echo $user_data['descrição']?></h4>
+                    <p class="texto"><?php echo $user_data['valor'] ?> R$</p>
+                    <a href="pagina-dinamica.php/?id=<?php echo $user_data['id'];?>" class="comprar">Comprar</a>
+                </div>
+            </a>
         </div>
-        <div class="content">
-            <h4><?php echo $user_data['nome']?><br><?php echo $user_data['descrição']?></h4>
-            <p class="texto"><?php echo $user_data['valor'] ?> R$</p>
-            <a  class="comprar">Comprar</a>
-        </div>
-    </a>
-</div>
 
-<!------------------------------------------------------------------------------------->
-        <?php 
-        endwhile;
-        ?>
-<!------------------------------------------------------------------------------------->
+        <?php endwhile; ?>
        
     </section>
 

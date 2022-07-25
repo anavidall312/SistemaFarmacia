@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Jun-2022 às 12:45
+-- Tempo de geração: 25-Jul-2022 às 15:59
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 8.1.6
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `admin` (
   `nome` text NOT NULL,
-  `email` text NOT NULL,
+  `email` varchar(70) NOT NULL,
   `senha` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -38,8 +38,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`nome`, `email`, `senha`) VALUES
-('Sueide Alves', 'sueskn@gmail.com', '123456'),
-('Iury Morais Tenório', 'iurytenorio2005@gmail.com', '1234');
+('admin', 'admin@admin.com', 'admin');
 
 -- --------------------------------------------------------
 
@@ -87,6 +86,12 @@ CREATE TABLE `usuario` (
 --
 
 --
+-- Índices para tabela `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`email`);
+
+--
 -- Índices para tabela `produtos`
 --
 ALTER TABLE `produtos`
@@ -106,13 +111,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

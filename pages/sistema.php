@@ -44,18 +44,26 @@ $resultProdutos = $conn->query($sqlProdutos);
         padding: 0;
         }
         body{
+            width: 100vw;
             overflow-x: hidden;
             background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
             color:white;
             text-align: center;
         }
-        .nav{
-            
-            display: flex;
+        header{
             width: 100vw;
-            height: 9vh;
+            height: 10vh;
             background: rgb(32, 155, 220);
+        }
+        .nav{
+            padding: 0 1.5rem;
+            display: flex;
             justify-content: space-between;
+            align-items: center;
+            
+        }
+        .nav-list{
+            list-style: none;
         }
         .navbar{
             position: absolute;
@@ -133,15 +141,14 @@ $resultProdutos = $conn->query($sqlProdutos);
     </style>
 </head>
 <body>
-    <nav class="nav">
-        <div class="container">
-            <a href="#" class="navbar">Dados do banco de dados</a>
-        </div>
-        <div class="sair">
-            <a href="sair.php" class="saindo">Sair</a>
-        </div>
-    </nav>
-    <br>
+    <header>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#" class="navbar">Dados do banco de dados</a></li>
+                <li><a href="sair.php" class="saindo">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
     <?php 
 echo "<h1>Bem vindo $logado</h1>";
     ?>
@@ -165,7 +172,7 @@ echo "<h1>Bem vindo $logado</h1>";
     </div>
 
 
-
+<h1>Tabelas de Usuários</h1>
     <div class="m-5">
         <table class="table text-white">
             <thead>

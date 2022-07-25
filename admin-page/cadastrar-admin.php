@@ -36,6 +36,9 @@ header('Location: ../pages/sistema.php');
     <title>Novo Admin</title>
 </head>
 <body>
+    <header>
+        <a href="../pages/sistema.php">Voltar</a>
+    </header>
     
     <form method="POST" action="cadastrar-admin.php">
         <h1 class="h1">Cadastro de novo Admin</h1>
